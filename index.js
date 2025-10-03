@@ -24,3 +24,9 @@ app.get('/healthz', (req, res) => res.send('ok'));
 app.get('/ncco', (req, res) => res.json(ncco));
 
 app.listen(PORT, () => console.log(`NCCO server running on ${PORT}`));
+{
+  action: 'talk',
+  text: 'Hej! Testar att koppla upp samtalet nu.',
+  language: 'sv-SE',
+  voiceName: 'Filip'
+}
