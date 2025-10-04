@@ -8,7 +8,8 @@ const ncco = [
     action: 'connect',
     endpoint: [{
       type: 'websocket',
-      uri: 'wss://elevenlabs-agent-ws-connector.onrender.com/ws',
+      uri: uri: 'wss://elevenlabs-agent-ws-connector.onrender.com/socket'
+,
       'content-type': 'audio/l16;rate=16000'
     }]
   }
