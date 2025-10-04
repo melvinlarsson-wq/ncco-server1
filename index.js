@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
 
 // Starta servern
 const port = process.env.PORT || 3000;
+app.get('/healthz', (_req, res) => res.status(200).send('ok'));
 app.listen(port, () => {
   console.log(`NCCO server running on port ${port}`);
 });
